@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="smarthome" namespace="/" extends="json-default">
+	
+
+		<interceptors>
+            <interceptor name="loginVerify" class="com.ed.smarthome.struts.LoginInterceptor"></interceptor>
+            <interceptor-stack name="verify">
+                <interceptor-ref name="loginVerify"></interceptor-ref>
+                <interceptor-ref name="defaultStack" />
+            </interceptor-stack>
+        </interceptors>  
+        <default-interceptor-ref name="verify"></default-interceptor-ref>
+        
+        <!-- 错误处理Action -->
+        <global-results>
+            <result name="unlogin">/unloginerror.jsp</result>
+        </global-results> 
+        <action name="index" class="com.ed.smarthome.struts.ToindexAction">
+			<result name="success">/WEB-INF/index.jsp</result>
+			<result name="error">/unloginerror.jsp</result>
+		</action>
+		
+		<action name="login" class="com.ed.smarthome.struts.LoginAction">
+			<result name="adminlogin" type="chain">index</result>
+			<result name="userlogin" >/WEB-INF/userindex.jsp</result>
+			<result name="loginerror">/cannotloginerror.jsp</result>
+		</action>
+		
+		<action name="logout" class="com.ed.smarthome.struts.LogoutAction">
+			<result name="logout">/WEB-INF/login.jsp</result>
+		</action>
+		
+		<action name="register" class="com.ed.smarthome.struts.RegisterAction">
+			<result name="success">/WEB-INF/regsuccess.jsp</result>
+			<result name="error">/unloginerror.jsp</result>
+		</action>
+		
+
+		<action name="rc" class="com.ed.smarthome.struts.RemoteControl">
+			<result name="rc">/WEB-INF/remotecontrol.jsp</result>
+		</action>
+		<action name="usersmanager" class="com.ed.smarthome.struts.UsersManagerAction">
+			<result name="manager">/WEB-INF/usersmanager.jsp</result>
+			<result name="allowsuccess" type="chain">usersmanager</result>
+			<result name="bansuccess" type="chain">usersmanager</result>
+		</action>
+		<action name="history" class="com.ed.smarthome.struts.HistoryJsonAction" method="history">
+			<result type="json"/>
+		</action>
+		<action name="historymanager" class="com.ed.smarthome.struts.HistoryAction">
+			<result name="history">/WEB-INF/history.jsp</result>
+		</action>
+		
+		  
+		
+		<action name="statusjson" class="com.ed.smarthome.struts.StatusJsonAction">
+			<result type="json"/>
+		</action>
+		<action name="devicestatus" class="com.ed.smarthome.struts.GetDevicesStatus">
+			<result type="json"/>
+		</action>
+		<action name="usersjson" class="com.ed.smarthome.struts.UsersJsonAction">
+			<result type="json"/>
+		</action>
+		<action name="androidlogin" class="com.ed.smarthome.struts.android.AndroidLoginAction" method="login">
+			<result type="json"/>
+		</action>
+		<action name="androidgetuserinfo" class="com.ed.smarthome.struts.android.AndroidGetUserInfo" method="getUserInfo">
+			<result type="json"/>
+		</action>
+		<action name="androidreg" class="com.ed.smarthome.struts.android.AndroidRegAction" method="reg">
+			<result type="json"/>
+		</action>
+	</package>
+</struts>    
