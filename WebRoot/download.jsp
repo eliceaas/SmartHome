@@ -69,6 +69,9 @@
 					<li class="active">
 						<a class="waves-attach" href="usersmanager.action">用户管理</a>
 					</li>
+					<li class="active">
+						<a class="waves-attach" href="download.jsp">客户端下载</a>
+					</li>
 				</ul>
 				
 			</div>
@@ -118,6 +121,8 @@
 				<p>这个版本是从先前我们内测中挑选出来的一个比较稳定的版本，倾注了我们每个团队成员的心血</p>
 				<p>虽然已经是较为完善的版本了，但依旧可能存在或大或小的bug</p>
 				<p>如果您能在使用过程中向我们反馈您遇到的问题我们必感激不尽</p>
+				<p>版本亮点:</p>
+				<p>实现了web端的基本功能，具有视频监控功能，以后想使用本系统再也不用打开网页啦！</p>
 				<a href="">点此下载</a>
 				
 				
