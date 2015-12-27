@@ -324,7 +324,7 @@ function check(){
 								<input class="form-control form-control-default" id="pwd2" type="password" onfocus="javascript:checkpasswords2();" onblur="javascript:checkpassword2(this.value);" >
 							<br><p id="passname2"></p>
 					<label for="input-text">联系电话</label>
-							<input class="form-control form-control-default" name="phonenum" id="register_mobile" type="text" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;)" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)">
+							<input class="form-control form-control-default" name="phonenum" id="register_mobile" type="text" onkeyup="this.value=this.value.replace(/\D/g)" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)">
 							<br>
 				</div>
 				<div class="modal-footer">

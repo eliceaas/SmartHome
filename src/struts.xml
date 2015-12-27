@@ -54,7 +54,9 @@
 		</action>
 		
 		  
-		
+		<action name="getpiip" class="com.ed.smarthome.struts.GetPiipAction">
+			<result type="json"/>
+		</action>
 		<action name="statusjson" class="com.ed.smarthome.struts.StatusJsonAction">
 			<result type="json"/>
 		</action>

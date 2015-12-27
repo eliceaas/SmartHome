@@ -17,7 +17,7 @@ public class LoginInterceptor implements Interceptor {
         
         //判断action
         if(actionName.equals("login")||actionName.equals("register")||actionName.equals("androidlogin")||actionName.equals("androidgetuserinfo")||actionName.equals("statusjson")
-        		||actionName.equals("androidreg")||actionName.equals("rc")||actionName.equals("devicestatus")||actionName.equals("history")){
+        		||actionName.equals("androidreg")||actionName.equals("rc")||actionName.equals("devicestatus")||actionName.equals("history")||actionName.equals("getpiip")){
         	return invocation.invoke();
         }else{
         	Map<String, Object> sessionMap = ActionContext.getContext().getSession(); 
