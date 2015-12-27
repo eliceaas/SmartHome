@@ -25,5 +25,8 @@
         <property name="phonenum" type="java.lang.String">
             <column name="phonenum" />
         </property>
+        <property name="photoid" type="java.lang.String">
+            <column name="photoid" length="11" not-null="true" />
+        </property>
     </class>
 </hibernate-mapping>

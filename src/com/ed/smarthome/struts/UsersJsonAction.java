@@ -27,6 +27,7 @@ public class UsersJsonAction extends ActionSupport {
 		user.setName(u.getName());
 		user.setType(u.getType());
 		user.setInuse(u.getInuse());
+		user.setPhotoid(u.getPhotoid());
 		return SUCCESS;
 	}
 }

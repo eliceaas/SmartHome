@@ -14,6 +14,7 @@ public class Users implements java.io.Serializable {
 	private Integer type;
 	private Integer inuse;
 	private String phonenum;
+	private String photoid;
 
 	// Constructors
 
@@ -22,21 +23,24 @@ public class Users implements java.io.Serializable {
 	}
 
 	/** minimal constructor */
-	public Users(String name, String password, Integer type, Integer inuse) {
+	public Users(String name, String password, Integer type, Integer inuse,
+			String photoid) {
 		this.name = name;
 		this.password = password;
 		this.type = type;
 		this.inuse = inuse;
+		this.photoid = photoid;
 	}
 
 	/** full constructor */
 	public Users(String name, String password, Integer type, Integer inuse,
-			String phonenum) {
+			String phonenum, String photoid) {
 		this.name = name;
 		this.password = password;
 		this.type = type;
 		this.inuse = inuse;
 		this.phonenum = phonenum;
+		this.photoid = photoid;
 	}
 
 	// Property accessors
@@ -87,6 +91,14 @@ public class Users implements java.io.Serializable {
 
 	public void setPhonenum(String phonenum) {
 		this.phonenum = phonenum;
+	}
+
+	public String getPhotoid() {
+		return this.photoid;
+	}
+
+	public void setPhotoid(String photoid) {
+		this.photoid = photoid;
 	}
 
 }

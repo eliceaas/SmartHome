@@ -37,6 +37,7 @@ public class AndroidGetUserInfo extends ActionSupport implements ServletRequestA
         json.put("inuse", users.getInuse());
         json.put("usertype", users.getType());
         json.put("phonenum", users.getPhonenum());
+        json.put("photoid", users.getPhotoid());
         try {
 			byte[] jsonbytes=json.toString().getBytes("utf-8");
 			response.setContentLength(jsonbytes.length);

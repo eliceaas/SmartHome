@@ -18,6 +18,15 @@ public class AndroidRegAction extends ActionSupport implements ServletRequestAwa
 	private String userName;
 	private String password;
 	private String phonenum;
+	private String photoid;
+	
+	
+	public String getPhotoid() {
+		return photoid;
+	}
+	public void setPhotoid(String photoid) {
+		this.photoid = photoid;
+	}
 	
 	public String getUserName() {
 		return userName;
@@ -26,13 +35,17 @@ public class AndroidRegAction extends ActionSupport implements ServletRequestAwa
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-
+	
+	
 	public String getPassword() {
 		return password;
 	}
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public AndroidRegAction() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getPhonenum() {
@@ -43,6 +56,8 @@ public class AndroidRegAction extends ActionSupport implements ServletRequestAwa
 		this.phonenum = phonenum;
 	}
 	
+	
+	
 	public void reg(){
 		this.response.setContentType("text/json;charset=utf-8");
 		this.response.setCharacterEncoding("UTF-8");
@@ -51,6 +66,7 @@ public class AndroidRegAction extends ActionSupport implements ServletRequestAwa
 		users.setName(this.userName);
 		users.setPassword(this.password);
 		users.setPhonenum(this.phonenum);
+		users.setPhotoid(this.photoid);
 		users.setType(1);
 		users.setInuse(0);
 		usersDAO.create(users);
