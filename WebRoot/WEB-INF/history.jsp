@@ -57,7 +57,7 @@
 						<a class="waves-attach" href="rc.action">家居控制</a>
 					</li>
 					<li class="active">
-						<a class="waves-attach" href="rc.action">远程视频监控</a>
+						<a class="waves-attach" href="remotecamera.action">远程视频监控</a>
 					</li>
 					<li class="active">
 						<a class="waves-attach" href="historymanager.action">数据历史纪录</a>
@@ -148,15 +148,15 @@
         </s:if>
         
         <s:else>
-            <a href="usersmanager.action">首页</a>
+            <a href="historymanager.action">首页</a>
             &nbsp;&nbsp;&nbsp;
-            <a href="usersmanager.action?page=<s:property value="page - 1"/>">上一页</a>
+            <a href="historymanager.action?page=<s:property value="page - 1"/>">上一页</a>
         </s:else>
         
         <s:if test="page!=totalPage">
-            <a href="usersmanager.action?page=<s:property value="page + 1"/>">下一页</a>
+            <a href="historymanager.action?page=<s:property value="page + 1"/>">下一页</a>
             &nbsp;&nbsp;&nbsp;
-            <a href="usersmanager.action?page=<s:property value="totalPage"/>">尾页</a>
+            <a href="historymanager.action?page=<s:property value="totalPage"/>">尾页</a>
         </s:if>
         
         <s:else>

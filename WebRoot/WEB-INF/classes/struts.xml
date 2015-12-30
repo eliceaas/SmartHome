@@ -33,14 +33,18 @@
 		</action>
 		
 		<action name="register" class="com.ed.smarthome.struts.RegisterAction">
-			<result name="success">/WEB-INF/regsuccess.jsp</result>
-			<result name="error">/unloginerror.jsp</result>
+			<result name="success">/regsuccess.jsp</result>
+			<result name="error">/regerror.jsp</result>
 		</action>
 		
 
 		<action name="rc" class="com.ed.smarthome.struts.RemoteControl">
 			<result name="rc">/WEB-INF/remotecontrol.jsp</result>
 		</action>
+		<action name="remotecamera" class="com.ed.smarthome.struts.RemoteCamera">
+			<result name="rc">/WEB-INF/remotecamera.jsp</result>
+		</action>
+
 		<action name="usersmanager" class="com.ed.smarthome.struts.UsersManagerAction">
 			<result name="manager">/WEB-INF/usersmanager.jsp</result>
 			<result name="allowsuccess" type="chain">usersmanager</result>

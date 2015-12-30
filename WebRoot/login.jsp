@@ -348,12 +348,15 @@ function check(){
 					<p><strong>请仔细阅读以下说明。</strong></p>
 					<p>首先，您看到此页面代表着您已经准备好使用本系统了，我们在此表示由衷的谢意尝试我们的系统</p>
 					<p>这是由ElectronicDream团队打造的智能家居系统，结合了一系列智能家居系统的优点</p>
-					<p>感谢阿里云“云翼计划”、Github给予了我们很多灵感</p>
-					<p>感谢大家的支持!</p>
-					<p>版本:1.0.1 alpha</p>
-					<p>更新日志</p>
-					<p>&nbsp;&nbsp;1.重写了数据库操作逻辑</p>
+					<p>感谢大家的试用与支持!</p>
+					<p>版权所有©️Electronic Dream</p>
+					<p>版本:1.0.3 alpha</p>
+					<p>更新日期:dec 28 2015</p>
+					<p>更新日志:</p>
+					<p>&nbsp;&nbsp;1.重写了部分数据库操作逻辑</p>
 					<p>&nbsp;&nbsp;2.修复了ui中的部分bug</p>
+					<p>&nbsp;&nbsp;3.修复了历史管理器中点击下一页跳至用户管理器的bug</p>
+					<p>&nbsp;&nbsp;4.远程视频监控现在已经可以使用了</p>
 				</div>
 				<div class="modal-footer">
 					<p class="text-right"><button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">关闭</button><!-- <button class="btn btn-flat btn-brand waves-attach" data-dismiss="modal" type="button">OK</button> --></p>

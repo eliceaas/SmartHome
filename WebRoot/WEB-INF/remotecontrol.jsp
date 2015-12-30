@@ -83,7 +83,7 @@ else if (window.ActiveXObject)
 		<a class="header-logo margin-left-no" href="index.action">SmartHome智能家居管理系统</a>
 		<div class="header-affix pull-left" data-offset-top="108" data-spy="affix">
 			<span class="header-text margin-left-no">
-				<i class="icon margin-right">chevron_right</i>远程监控
+				<i class="icon margin-right">chevron_right</i>远程控制
 			</span>
 		</div>
 		<ul class="nav nav-list pull-right">
@@ -107,7 +107,7 @@ else if (window.ActiveXObject)
 						<a class="waves-attach" href="rc.action">家居控制</a>
 					</li>
 					<li class="active">
-						<a class="waves-attach" href="rc.action">远程视频监控</a>
+						<a class="waves-attach" href="remotecamera.action">远程视频监控</a>
 					</li>
 					<li class="active">
 						<a class="waves-attach" href="historymanager.action">数据历史纪录</a>

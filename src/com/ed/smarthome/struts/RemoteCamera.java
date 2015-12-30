@@ -6,7 +6,7 @@ import com.ed.smarthome.entity.Device;
 import com.ed.smarthome.entity.Piip;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class RemoteControl extends ActionSupport {
+public class RemoteCamera extends ActionSupport {
 	private String ip;
 	@Override
 	public String execute() throws Exception {

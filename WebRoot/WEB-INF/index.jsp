@@ -115,7 +115,7 @@ if (xmlhttp.readyState==4)
 						<a class="waves-attach" href="rc.action">家居控制</a>
 					</li>
 					<li class="active">
-						<a class="waves-attach" href="rc.action">远程视频监控</a>
+						<a class="waves-attach" href="remotecamera.action">远程视频监控</a>
 					</li>
 					<li class="active">
 						<a class="waves-attach" href="historymanager.action">数据历史纪录</a>
@@ -286,7 +286,7 @@ if (xmlhttp.readyState==4)
                 
 	<footer class="footer">
 		<div class="container">
-			<p>CopyRight @ElectronicDream 2015 1.0.1 alpha</p>
+			<p>CopyRight @ElectronicDream 2015 1.0.3 alpha</p>
 		</div>
 	</footer>
 	<%-- <div class="fbtn-container">
