@@ -28,7 +28,7 @@ function checkname(){
 		var patrn=/^[a-zA-Z][a-zA-Z0-9]*$/;
 		
 		if(!patrn.exec(pass.value)){
-			document.getElementById("passname").innerHTML="<font color='red'>登陆名错误，以字母开头，4-20位字母或数字</font>"; 
+			document.getElementById("passname").innerHTML="<font color='red'>登陆名错误,以字母开头,4-20位字母或数字</font>"; 
 		}else{
 			$.ajax({
 				url:'/ajax/checkname?passportid='+pass.value,
